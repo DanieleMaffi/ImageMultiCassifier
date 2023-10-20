@@ -9,7 +9,7 @@ import tensorflow as tf
 train, test = datasets.cifar10.load_data()
 training_data, testing_data = training_data/255, testing_data/255   # Scaling the images
 
-class_names = ['Plane', 'Car', 'Bird', 'Car', 'Deer', 'Dog', 'Frog', 'Horse', 'Ship', 'Truck']
+class_names = ['Plane', 'Car', 'Bird', 'Cat', 'Deer', 'Dog', 'Frog', 'Horse', 'Ship', 'Truck']
 
 # PLotting 16 images
 for i in range(16):
