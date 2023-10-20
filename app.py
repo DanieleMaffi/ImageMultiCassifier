@@ -38,7 +38,7 @@ testing_labels = testing_labels[:4000]
 
     layers.Flatten(),
     layers.Dense(64, activation='relu'),
-    layers.Dense(10, activation='softmax')  # !0 possible outputs normalized by the softmax function (converts a vector of real numbers into a probability distribution).
+    layers.Dense(10, activation='softmax')  # 10 possible outputs normalized by the softmax function (converts a vector of real numbers into a probability distribution).
 ])
 
 model.compile('adam', metrics='accuracy', loss='sparse_categorical_crossentropy')
